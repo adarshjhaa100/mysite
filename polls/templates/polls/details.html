@@ -1,0 +1,7 @@
+{%if question%}
+{%for ch in question.choice_set.all%}
+<ul>
+<li>{{ch.text}}</li>
+</ul>
+{%endfor%}
+{%endif%}

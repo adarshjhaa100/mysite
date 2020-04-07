@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    {%if queList%}
+    <ul>
+        {%for que in queList%}
+        <li>
+            <a href="{%url 'polls:detail' que.id%}">{{que.questionText}}</a>
+        </li>
+        {%endfor%}    
+    </ul>
+    {%else%}
+    <p>No polls</p>
+    {%endif%}
+    this is a html file
+</body>
+</html>
